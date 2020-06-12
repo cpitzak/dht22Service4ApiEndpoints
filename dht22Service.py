@@ -1,3 +1,4 @@
+import json
 import os
 import pigpio
 import requests
@@ -28,7 +29,7 @@ class DHT22CurrentTemp:
           "temp_f": temp,
           "humidity_percent": humidity
         }
-        return requests.put(self.upload_api_url, data=payload, headers=headers)
+        return requests.put(self.upload_api_url, data=json.dumps(payload), headers=headers)
 
     def celcius_to_fahrenheit(self, celcius):
         return celcius * (9/5.0) + 32
