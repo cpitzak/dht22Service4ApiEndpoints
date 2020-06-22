@@ -12,10 +12,10 @@
 
 case "$1" in
         start)
-                su - pi -c "/usr/bin/python /apps/dht22Service/dht22Service.py &"
+                su - pi -c "/usr/bin/python /apps/dht22Service4ApiEndpoints/dht22Service.py &"
                 ;;
         stop)
-                pid=`ps -ef | grep '[p]ython /apps/dht22Service/dht22Service.py' | awk '{ print $2 }'`
+                pid=`ps -ef | grep '[p]ython /apps/dht22Service4ApiEndpoints/dht22Service.py' | awk '{ print $2 }'`
                 kill $pid
                 ;;
         restart)
