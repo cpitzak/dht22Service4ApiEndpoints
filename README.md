@@ -10,7 +10,7 @@ None if you use the Docker script I made. Just move onto the Install section to 
 
 If you don't want to use the Docker script and would rather install this manually then you'll need:
 
-- [pigpio](http://abyz.co.uk/rpi/pigpio/download.html)
+- [pigpio](https://github.com/joan2937/pigpio)
 - [pigpio as a service](https://www.raspberrypi.org/forums/viewtopic.php?f=32&t=103752)
 - [DHT22 Sensor](https://www.adafruit.com/product/385) and everything else (breadboard, wires, ribbon cable to connect breadboard to the pi) to connect this to your raspberry pi
 
